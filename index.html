@@ -10,10 +10,6 @@
     />
     <meta name="author" content="David • Diseño web" />
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
-    />
     <link rel="stylesheet" href="./css/estilos.css" />
     <title>David • Diseño web</title>
   </head>
@@ -24,7 +20,18 @@
       </a>
       <nav class="nav" id="nav">
         <button class="cerrar-menu" id="cerrar" aria-label="cerrar menu">
-          <i class="bi bi-x"></i>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="currentColor"
+            class="bi bi-x"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"
+            />
+          </svg>
         </button>
         <ul class="nav-list">
           <li><a href="#inicio" class="nav-link">Inicio</a></li>
@@ -34,7 +41,19 @@
         </ul>
       </nav>
       <button id="abrir" class="abrir-menu" aria-label="abrir menu">
-        <i class="bi bi-list"></i>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          fill="currentColor"
+          class="bi bi-list"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+          />
+        </svg>
       </button>
       <div class="overlay" id="overlay"></div>
     </header>
@@ -42,7 +61,7 @@
       <section class="hero" id="inicio">
         <div class="column1">
           <h1>
-            Hola soy David,
+            Hola soy David,<br class="salto" />
             <span id="dynamic-word" class="typewriter"></span>
             lover.<br />Hago que las ideas se vuelvan sitios webs🔥. ¿Tienes un
             proyecto en mente? Lo subimos juntos al siguiente nivel.

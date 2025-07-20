@@ -411,7 +411,6 @@ body {
   justify-content: center;
   align-items: center;
   gap: 100px;
-  background: #fdfdfd;
 
   .block1 {
     width: 700px;
@@ -1045,6 +1044,9 @@ body {
   .derechos {
     font-family: var(--font-titulos);
     font-size: 14px;
+    .salto2 {
+      display: none;
+    }
   }
   @media screen and (max-width: 850px) {
     & {
@@ -1067,6 +1069,15 @@ body {
       .derechos {
         font-size: 12px;
         text-align: center;
+      }
+    }
+  }
+  @media screen and (max-width: 400px) {
+    & {
+      .derechos {
+        .salto2 {
+          display: block;
+        }
       }
     }
   }

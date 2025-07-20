@@ -69,8 +69,9 @@ header {
     height: 100px;
     transition: all 0.5s ease;
     img {
-      width: auto;
+      width: 100%;
       height: 100%;
+      object-fit: contain;
       &:hover {
         animation: wobble 0.8s linear both;
       }
@@ -112,11 +113,12 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
     opacity: 0;
     visibility: hidden;
     transition: transform 0.4s ease, opacity 0.3s ease, visibility 0.3s ease;
+    background-color: #0000003f;
+    width: 100vw;
+    height: 100vh;
   }
 
   .overlay.visible {
@@ -229,6 +231,10 @@ body {
     justify-content: center;
     gap: 25px;
 
+    .salto {
+      display: none;
+    }
+
     h1 {
       font-size: clamp(16px, 3vw, 40px);
     }
@@ -265,7 +271,7 @@ body {
     height: clamp(300px, 60vh, 600px);
     position: relative;
     img {
-      width: auto;
+      width: 100%;
       height: 100%;
       object-fit: contain;
     }
@@ -301,6 +307,9 @@ body {
     & {
       .column1 {
         width: 300px;
+        .salto {
+          display: block;
+        }
       }
       .hero-slider {
         height: 300px;
@@ -317,10 +326,6 @@ body {
           height: 40px;
         }
       }
-    }
-  }
-  @media screen and (max-width: 550px) {
-    & {
       .hero-slider {
         height: 200px;
       }
@@ -358,8 +363,9 @@ body {
         width: auto;
         height: 100px;
         img {
-          width: auto;
+          width: 100%;
           height: 100%;
+          object-fit: contain;
         }
 
         &:hover {
@@ -438,6 +444,7 @@ body {
     img {
       width: auto;
       height: 100%;
+      object-fit: contain;
 
       &:hover {
         animation: shake 0.8s linear both;
@@ -446,7 +453,11 @@ body {
   }
   @media screen and (max-width: 1250px) {
     & {
+      gap: 50px;
       padding: 40px;
+      .block2 {
+        height: 400px;
+      }
     }
   }
   @media screen and (max-width: 1000px) {
@@ -507,8 +518,9 @@ body {
     width: auto;
     height: 500px;
     img {
-      width: auto;
+      width: 100%;
       height: 100%;
+      object-fit: contain;
     }
   }
 
@@ -547,7 +559,6 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      transition: background-color 0.3s ease;
       &:hover {
         background-color: #2ecc71;
       }
@@ -562,7 +573,9 @@ body {
       gap: 50px;
       padding: 0 20px 0 20px;
       height: 200px;
-
+      .me1 {
+        height: 350px;
+      }
       .containbanner {
         gap: 30px;
         .boton2 {
@@ -769,12 +782,6 @@ body {
   font-family: var(--font-titulos);
   font-size: clamp(14px, 1vw, 18px);
   clip-path: polygon(0 8%, 100% 0, 100% 93%, 0% 100%);
-
-  @media screen and (max-width: 1px) {
-    & {
-      height: auto;
-    }
-  }
 }
 
 .works {
@@ -809,8 +816,9 @@ body {
     }
 
     img {
-      width: auto;
+      width: 100%;
       height: 250px;
+      object-fit: contain;
     }
     &:hover {
       transform: translateY(-20px);
@@ -837,7 +845,6 @@ body {
   width: 100%;
   height: 600px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   font-family: var(--font-titulos);
@@ -942,8 +949,9 @@ body {
     height: 600px;
 
     img {
-      width: auto;
+      width: 100%;
       height: 100%;
+      object-fit: contain;
     }
   }
   @media screen and (max-width: 1150px) {
@@ -954,7 +962,7 @@ body {
         width: 500px;
       }
       .me2 {
-        height: 400px;
+        height: 500px;
       }
     }
   }
@@ -1001,8 +1009,9 @@ body {
       width: auto;
       height: 100px;
       img {
-        width: auto;
+        width: 100%;
         height: 100%;
+        object-fit: contain;
         &:hover {
           animation: wobble 0.8s linear both;
         }
